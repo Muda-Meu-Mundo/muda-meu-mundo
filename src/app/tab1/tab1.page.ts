@@ -15,24 +15,21 @@ export class Tab1Page {
   }
 
   facebook(){
-    alert('link facebook')
+    window.open('https://pt-br.facebook.com/mudameumundo/', '_system');
   }
 
   instagram(){
-    alert('link instagram')
+    window.open('https://www.instagram.com/mudameumundo/?hl=pt-br', '_system');
   }
 
   linkedin(){
-    alert('link linkedin')
+    window.open('https://www.linkedin.com/company/muda-meu-mundo/?originalSubdomain=br', '_system');
   }
 
-  whatsapp(){
-    alert('link zap') 
+  site(){
+    window.open('https://www.mudameumundo.com.br/', '_system');
   }
 
-  email(){
-    alert('link email') 
-  }
 
 
 
