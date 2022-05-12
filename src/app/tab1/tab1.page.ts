@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { MenuController } from '@ionic/angular';
-=======
->>>>>>> 8bf369f5813b638c9b6c5017baba2aa11744a410
+
 
 @Component({
   selector: 'app-tab1',
@@ -12,7 +9,6 @@ import { MenuController } from '@ionic/angular';
 export class Tab1Page {
 
   constructor() {}
-<<<<<<< HEAD
   
   botaoclick(){
     alert('squeça tud')
@@ -42,8 +38,3 @@ export class Tab1Page {
 
 
 }
-
-=======
-
-}
->>>>>>> 8bf369f5813b638c9b6c5017baba2aa11744a410
