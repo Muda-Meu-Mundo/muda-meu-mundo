@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Muda Meu Mundo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
