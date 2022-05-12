@@ -23,7 +23,6 @@ describe('Tab1Page', () => {
     expect(component).toBeTruthy();
   });
 });
-<<<<<<< HEAD
 
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
@@ -51,5 +50,3 @@ constructor(private menu: MenuController) { }
     this.menu.open('custom');
   }
 }
-=======
->>>>>>> 8bf369f5813b638c9b6c5017baba2aa11744a410
