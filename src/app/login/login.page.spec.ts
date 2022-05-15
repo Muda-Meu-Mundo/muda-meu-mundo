@@ -49,6 +49,4 @@ describe('LoginPage', () => {
     expect(router.navigate).toHaveBeenCalledWith(['register']);
   });
 
-
-  
 });
