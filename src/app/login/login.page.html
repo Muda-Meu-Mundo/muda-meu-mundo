@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title color="success">Login Muda Meu Mundo</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-label position = "floating">Email</ion-label>
+            <ion-input type = "email" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position = "floating">Senha</ion-label>
+            <ion-input type = "senha" formControlName="senha"></ion-input>
+          </ion-item>
+          <ion-button color="primary" fill="clear" size="full" [disabled]="!form.get('email').valid">Esqueceu email/senha</ion-button>
+          <ion-button color="primary" size ="full" (click)="login()" [disabled]="!form.valid">Login</ion-button>
+          <ion-button color="primary" fill="clear" size="full" (click)="register">Registro</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </div>
+</ion-content>
