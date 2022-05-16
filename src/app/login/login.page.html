@@ -1,20 +1,19 @@
 <ion-content>
   <div class="flex-center">
     <form [formGroup]="form">
-      <ion-card class="border" slot="start">
-        <ion-card-header class="pad20">
+      <ion-card class="border" slot="start" >
+        <ion-card-header class="pad20" >
           <ion-card-title color="success" style="font-size:30px">Login Muda Meu Mundo</ion-card-title>
-
           <img src = "assets/mmmlogo.png" class="center-right"  width="135"  height="96">
         </ion-card-header>
         
-        <ion-card-content>
+        <ion-card-content >
           <ion-item>
-            <ion-label position = "floating">Email</ion-label>
+            <ion-label position = "floating" style = "font-family:'Times New Roman', Times, serif">Email</ion-label >
             <ion-input type = "email" formControlName="email"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position = "floating">Senha</ion-label>
+            <ion-label position = "floating" style = "font-family:Verdana, Geneva, Tahoma, sans-serif">Senha</ion-label>
             <ion-input type = "senha" formControlName="senha"></ion-input>
           </ion-item>
           <ion-button color="dark" fill="clear" size="full" [disabled]="!form.get('email').valid">Esqueceu email ou senha</ion-button>
