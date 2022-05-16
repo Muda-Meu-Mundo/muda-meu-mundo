@@ -1,10 +1,13 @@
 <ion-content>
   <div class="flex-center">
     <form [formGroup]="form">
-      <ion-card>
-        <ion-card-header>
-          <ion-card-title color="success">Login Muda Meu Mundo</ion-card-title>
+      <ion-card class="border" slot="start">
+        <ion-card-header class="pad20">
+          <ion-card-title color="success" style="font-size:30px">Login Muda Meu Mundo</ion-card-title>
+
+          <img src = "assets/mmmlogo.png" class="center-right"  width="135"  height="96">
         </ion-card-header>
+        
         <ion-card-content>
           <ion-item>
             <ion-label position = "floating">Email</ion-label>
