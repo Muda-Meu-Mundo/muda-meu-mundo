@@ -1,7 +1,53 @@
+ion-content {
+  --background: #2dd36f;
+}
+
+
+
 .center {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    
+    font-size: 22px;
+
   }
+  
+
+.cabeça {
+  
+  margin-right: -5px;
+  margin-left: -5px;
+  margin-top: -3px;
+  background-color: #2dd36f;
+  img {
+    margin-top: 5px;
+  }
+ } 
+
+.user {
+  
+  font-size: 17px;
+}
+
+ion-list {
+  background-color: #2dd36f;
+}
+
+ion-card-content { 
+  padding: 0px ;
+}
+
+.border {
+    border-radius: 20px !important;
+    box-shadow: 2px 2px 5px  gray;
+    margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+    }
+
+    :root[mode=ios] .coolvetica,
+    :root[mode=md] .coolvetica{
+      --ion-font-family:  'coolvetica'!important;
+      font-family:  'coolvetica' !important;
+    }

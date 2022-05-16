@@ -1,10 +1,10 @@
 <ion-header [translucent]="true">
 
-  <ion-toolbar><div align="center">
-    <ion-title color="primary">
+  <ion-toolbar color="secondary">
+    <ion-title class="user" color="light">
       Perfil
     </ion-title>
-    </div>
+  
      
     
  
@@ -15,15 +15,15 @@
   </ion-header>
 
 <ion-content padding>
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="botaoclick()">
+  <ion-fab vertical="top" horizontal="end" slot="fixed" >
+    <ion-fab-button (click)="botaoclick()" color="secondary">
       <ion-icon name="pencil-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="share"></ion-icon>
+    <ion-fab-button color="secondary">
+      <ion-icon name="share" ></ion-icon>
         
     </ion-fab-button>
     <ion-fab-list side="top">
@@ -48,39 +48,53 @@
   </ion-fab>
 
 
-  <ion-list class="main-header" >
-    <div align="center">
+  <ion-grid class="cabeça" >
+    <div align="center" class="avatar">
      <ion-avatar>
-       <img src="assets/foto.png">
+      <img src="assets/foti.jpg">
      </ion-avatar> 
     </div>
-     <ion-item>
+          
+    <ion-item color="#0000ffff" lines="none">
        <ion-label>
-         <ion-text color="primary" class="center">Nome</ion-text>
+         <ion-text  class="center" color="light">Nome</ion-text>
        </ion-label>
       </ion-item>
-  </ion-list>
+    </ion-grid>
 
 <ion-list>
-  
-  <ion-item>
-    <ion-label>
+<ion-card class="border"> 
+  <ion-card-content padding >
+  <ion-item >
+    <ion-label >
       <ion-text color="primary" >E-mail</ion-text>
       <p><ion-text color="primary">a</ion-text></p>
     </ion-label>
   </ion-item>
+</ion-card-content> 
+</ion-card>
+<ion-card class="border">
+<ion-card-content padding>
   <ion-item>
     <ion-label>
       <ion-text color="primary">Endereço</ion-text>
       <p><ion-text color="primary">l</ion-text></p>
     </ion-label>
   </ion-item>
+</ion-card-content>
+</ion-card>
+<ion-card class="border">
+<ion-card-content padding>
   <ion-item>
     <ion-label>
       <ion-text color="primary">Telefone</ion-text>
       <p><ion-text color="primary">u</ion-text></p>
     </ion-label>
   </ion-item>
+</ion-card-content>
+</ion-card>
+
+
 </ion-list>
 
 
