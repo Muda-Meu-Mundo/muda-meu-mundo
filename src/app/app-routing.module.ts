@@ -23,6 +23,27 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'frutas',
+    loadChildren: () => import('./produtos/frutas/frutas.module').then( m => m.FrutasPageModule)
+  },
+  {
+    path: 'verduras',
+    loadChildren: () => import('./produtos/verduras/verduras.module').then( m => m.VerdurasPageModule)
+  },
+  {
+    path: 'legumes',
+    loadChildren: () => import('./produtos/legumes/legumes.module').then( m => m.LegumesPageModule)
+  },
+  {
+    path: 'graos',
+    loadChildren: () => import('./produtos/graos/graos.module').then( m => m.GraosPageModule)
+  },
+  {
+    path: 'raizes',
+    loadChildren: () => import('./produtos/raizes/raizes.module').then( m => m.RaizesPageModule)
+  },
+
 
 
 
