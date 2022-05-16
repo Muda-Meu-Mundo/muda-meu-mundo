@@ -1,4 +1,7 @@
-ion-content {
-    --background: url('../../assets/cenoura.jpg/') no-repeat center center / cover !important;
-}
-
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+  }
