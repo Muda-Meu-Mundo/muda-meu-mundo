@@ -1,5 +1,5 @@
 ion-content {
-  --background: #2dd36f;
+  --background: #a1ff81;
 }
 
 
@@ -15,23 +15,25 @@ ion-content {
   
 
 .cabeça {
-  
+  height: 200px;
   margin-right: -5px;
   margin-left: -5px;
-  margin-top: -3px;
-  background-color: #2dd36f;
-  img {
-    margin-top: 5px;
-  }
- } 
+  background-color: #a1ff81;
+   } 
 
+ .avatar {
+  width:100% !important;  
+  height : 100% !important;  
+  max-width: 120px !important;  
+  max-height: 120px !important;
+  margin-top: 25px;
+}
 .user {
-  
-  font-size: 17px;
+    font-size: 17px;
 }
 
 ion-list {
-  background-color: #2dd36f;
+  background-color: #a1ff81;
 }
 
 ion-card-content { 
@@ -40,14 +42,11 @@ ion-card-content {
 
 .border {
     border-radius: 20px !important;
-    box-shadow: 2px 2px 5px  gray;
+    box-shadow: 2px 2px 5px  rgba(128, 128, 128, 0.863);
     margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+    margin-right: 10px;
+    margin: 5px;
+    vertical-align: middle;
     }
 
-    :root[mode=ios] .coolvetica,
-    :root[mode=md] .coolvetica{
-      --ion-font-family:  'coolvetica'!important;
-      font-family:  'coolvetica' !important;
-    }
+    

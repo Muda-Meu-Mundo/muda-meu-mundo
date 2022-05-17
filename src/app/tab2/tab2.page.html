@@ -12,31 +12,33 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
   </ion-header>
-  
-<ion-item color="#0000ffff" lines="none" >
-  <ion-label color="tertiary">Frutas</ion-label>
-  <ion-toggle slot="end" unchecked></ion-toggle>
-</ion-item>
 
-<ion-item color="#0000ffff" lines="none">
-  <ion-label color="tertiary">Verduras</ion-label>
-  <ion-toggle slot="end" unchecked></ion-toggle>
-</ion-item>
+    <ion-item class="border"  routerLink="/produtos/frutas" detail >
+     <ion-label color="secondary">Frutas</ion-label>
+    </ion-item>
+ 
 
-<ion-item color="#0000ffff" lines="none">
-  <ion-label color="tertiary">Legumes</ion-label>
-  <ion-toggle slot="end" unchecked></ion-toggle>
-</ion-item>
+<ion-item class="border" lines="none" routerLink="/produtos/verduras" detail>
+  <ion-label color="secondary">Verduras</ion-label>
+  </ion-item>
 
-<ion-item color="#0000ffff" lines="none">
-  <ion-label color="tertiary">Graos</ion-label>
-  <ion-toggle slot="end" unchecked></ion-toggle>
-</ion-item>
+ 
+<ion-item class="border" lines="none" routerLink="/produtos/legumes" detail>
+  <ion-label color="secondary">Legumes</ion-label>
+  </ion-item>
 
-<ion-item color="#0000ffff" lines="none">
-  <ion-label color="tertiary">Raízes</ion-label>
-  <ion-toggle slot="end" unchecked></ion-toggle>
-</ion-item>
+ 
+<ion-item class="border" lines="none" routerLink="/produtos/graos" detail>
+  <ion-label color="secondary">Grãos</ion-label>
+  </ion-item>
+
+
+ <ion-item class="border" lines="none" routerLink="/produtos/raizes" detail>
+  <ion-label color="secondary">Raízes</ion-label>
+ </ion-item>
+
+
+
 
 
 
