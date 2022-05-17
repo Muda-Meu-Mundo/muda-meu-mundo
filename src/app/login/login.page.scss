@@ -1,17 +1,26 @@
 ion-content {
-    --background: url('../../assets/cenoura.jpg/') no-repeat center center / cover !important;
+    --background: url('../../assets/carrot2.JPG/') no-repeat center center / cover !important;
+    img{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+    }
+   
 }
 
 ion-button[color="dark"]{
     text-transform: initial;
+
 }
+
 
 .border {
     border-radius: 20px !important;
     box-shadow: 2px 2px 5px 2px gray;
     margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin: 10px;
     }
 
 ion-card-header { position: relative }
@@ -24,6 +33,9 @@ ion-card-header { position: relative }
     }
 
 .pad20{
-    padding: 40px;
+    padding: 25px;
 
 }
+
+
+
