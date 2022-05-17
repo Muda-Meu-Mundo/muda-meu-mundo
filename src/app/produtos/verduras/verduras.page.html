@@ -8,5 +8,9 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-button *ngFor="let product of productList" color="light" expand="block" shape="round">
+    <ion-text>
+       {{product.productName}}
+     </ion-text>
+  </ion-button>
 </ion-content>

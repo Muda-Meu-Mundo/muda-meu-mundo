@@ -1,6 +1,8 @@
-<ion-header>
+<ion-header >
   <ion-toolbar>
-    <ion-title>Maça</ion-title>
+    <ion-title *ngFor="let product of productList">
+      {{product.productName}}
+    </ion-title>
     <ion-buttons slot="end">
      <ion-button (click)="_dismiss()">
       <ion-icon slot="icon-only" name="close"></ion-icon>

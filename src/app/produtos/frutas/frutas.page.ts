@@ -9,6 +9,22 @@ import { ModalComponent } from '../components/modal/modal.component';
 })
 export class FrutasPage implements OnInit {
 
+
+productList = [
+  {"productName" : "Abacaxi"},
+  {"productName" : "Acerola"},
+  {"productName" : "Caju"},
+  {"productName" : "Laranja"},
+  {"productName" : "Maça"},
+  {"productName" : "Mamão"},
+  {"productName" : "Melão"},
+  {"productName" : "Pêra"},
+  {"productName" : "Pitomba"},
+  {"productName" : "Uva"}
+  
+];
+
+
   constructor(private modalCtrl:ModalController) { }
 
   ngOnInit() {
@@ -17,11 +33,13 @@ export class FrutasPage implements OnInit {
   async _openModal() {
     const modal = await this.modalCtrl.create({ 
       component:ModalComponent, 
-      componentProps:{
-        "name":"malu",
-        "type": "linda"
-      } })
+       })
 
      return await modal.present();
   }
+
+
+
+
+
 }

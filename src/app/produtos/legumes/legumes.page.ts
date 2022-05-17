@@ -6,7 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./legumes.page.scss'],
 })
 export class LegumesPage implements OnInit {
-
+  productList = [
+    {"productName" : "Abóbora"},
+    {"productName" : "Berinjela"},
+    {"productName" : "Cenoura"},
+    {"productName" : "Chuchu"},
+    {"productName" : "Ervilha"},
+    {"productName" : "Pepino"},
+    {"productName" : "Pimentão"},
+    {"productName" : "Tomate"},
+    ];
   constructor() { }
 
   ngOnInit() {

@@ -7,8 +7,19 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent implements OnInit {
-  @Input() name:string;
-  @Input() type:string;
+  productList = [
+    {"productName" : "Laranja"},
+    {"productName" : "Mamão"},
+    {"productName" : "Uva"},
+    {"productName" : "Maça"},
+    {"productName" : "Caju"},
+    {"productName" : "Abacaxi"},
+    {"productName" : "Acerola"},
+    {"productName" : "Melão"},
+    {"productName" : "Pêra"},
+    {"productName" : "Pitomba"}
+  
+  ]
 
   constructor(private modalCtrl: ModalController) { }
 
@@ -16,7 +27,8 @@ export class ModalComponent implements OnInit {
 
   _dismiss(){
     console.log("dismiss")
-    this.modalCtrl.dismiss()
+    this.modalCtrl.dismiss(
+          )
   }
 
 }
