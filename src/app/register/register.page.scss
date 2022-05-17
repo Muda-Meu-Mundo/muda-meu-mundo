@@ -5,3 +5,35 @@ ion-content {
 ion-button{
     margin:10px;
 }
+
+ion-button[color="dark"]{
+    text-transform: initial;
+
+}
+
+
+.border {
+    border-radius: 20px !important;
+    box-shadow: 2px 2px 5px 2px gray;
+    margin-left: 10px;
+  margin-right: 10px;
+  margin: 10px;
+    }
+
+ion-card-header { position: relative }
+.center-right{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    margin-top: 5px;
+    }
+
+.pad20{
+    padding: 25px;
+
+}
+
+.center{
+    left: 700px;
+}
