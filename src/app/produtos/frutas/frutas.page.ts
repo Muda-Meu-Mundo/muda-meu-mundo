@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { ModalComponent } from '../components/modal/modal.component';
 import { IonDatetime } from '@ionic/angular';
 import { format, parseISO, getDate, getMonth, getYear } from 'date-fns';
 @Component({
@@ -30,6 +29,7 @@ unitList = [
   {"unitName" : "sacas"},
   {"unitName" : "litros"},
  ];
+ 
 @ViewChild(IonDatetime, { static: true }) datetime: IonDatetime;
 dateValue = '';
 dateValue2 = '';

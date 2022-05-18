@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { FrutasPageRoutingModule } from './frutas-routing.module';
 
 import { FrutasPage } from './frutas.page';
-import { ModalComponent } from '../components/modal/modal.component';
+
 
 @NgModule({
   imports: [
@@ -18,7 +18,7 @@ import { ModalComponent } from '../components/modal/modal.component';
   ],
   declarations: [
     FrutasPage,
-    ModalComponent
+   
   ]
 })
 export class FrutasPageModule {}
