@@ -1,28 +1,22 @@
 <ion-header [translucent]="true">
-
   <ion-toolbar color="secondary">
-    <ion-title color="light" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+    <ion-title class="final" color="light" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 24px">
       Perfil
     </ion-title>
-
-
-
-
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-  </ion-header>
 
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense"></ion-header>
   <ion-content padding>
     <ion-fab vertical="top" horizontal="end" slot="fixed">
-      <ion-fab-button (click)="botaoclick()" color="secondary">
+      <ion-fab-button (click)="botaoclick()" class="bcolor">
         <ion-icon name="pencil-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button color="secondary">
+      <ion-fab-button class="bcolor">
         <ion-icon name="share"></ion-icon>
 
       </ion-fab-button>
@@ -48,7 +42,7 @@
     </ion-fab>
 
 
-    <ion-grid class="cabeça">
+    <ion-grid class="cabeça" >
       <div align="center">
         <ion-avatar class="avatar">
           <img src="assets/foti.jpg">
@@ -63,14 +57,13 @@
       </ion-item>
     </ion-grid>
 
-    <ion-grid>
+    <ion-grid class="mgrid">
       <ion-row>
         <ion-col>
           <ion-item class="border">
             <ion-label class="final">
-              <ion-text color="primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                E-mail: </ion-text>
-              <ion-text color="primary"> maluzi@gmail.com</ion-text>
+              <ion-text color="light" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">E-mail: </ion-text>
+              <ion-text color="light"> maluzi@gmail.com</ion-text>
             </ion-label>
           </ion-item>
         </ion-col>
@@ -80,9 +73,8 @@
         <ion-col>
           <ion-item class="border">
             <ion-label class="final">
-              <ion-text color="primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                Endereço: </ion-text>
-              <ion-text color="primary"> Rua da Hora,302</ion-text>
+              <ion-text color="light" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Endereço: </ion-text>
+              <ion-text color="light"> Rua da Hora,302</ion-text>
             </ion-label>
           </ion-item>
         </ion-col>
@@ -92,9 +84,8 @@
         <ion-col>
           <ion-item class="border">
             <ion-label class="final">
-              <ion-text color="primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                Telefone: </ion-text>
-              <ion-text color="primary">985632-9545</ion-text>
+              <ion-text color="light" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Telefone: </ion-text>
+              <ion-text color="light">985632-9545</ion-text>
             </ion-label>
           </ion-item>
         </ion-col>
@@ -104,16 +95,16 @@
       
         <ion-col>
           <ion-list class="border">
-            <ion-item lines="full">
+            <ion-item lines="full" class="verde">
               <ion-label class="final">
-                <ion-text color="primary"
-                  style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Produtos oferecidos:
+                <ion-text color="light"
+                  style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Produtos oferecidos:
                 </ion-text>
               </ion-label>
             </ion-item>
-            <ion-item *ngFor="let p of productList" lines="none">
+            <ion-item *ngFor="let p of productList" lines="none" class="verde">
               <ion-label class="final">
-                <ion-text color="primary">{{p.product}}</ion-text>
+                <ion-text color="light">{{p.product}}</ion-text>
               </ion-label>
             </ion-item>
           </ion-list>

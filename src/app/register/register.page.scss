@@ -2,22 +2,20 @@ ion-content {
     --background: url('../../assets/cenoura.jpg/') no-repeat center center / cover !important;
 }
 
-ion-button{
-    margin:10px;
-}
 
 ion-button[color="dark"]{
     text-transform: initial;
-
+    margin:10px;
 }
 
 
 .border {
+    background-color: #60b80d6d;
     border-radius: 20px !important;
     box-shadow: 2px 2px 5px 2px gray;
     margin-left: 10px;
-  margin-right: 10px;
-  margin: 10px;
+    margin-right: 10px;
+    margin: 10px;
     }
 
 ion-card-header { position: relative }
@@ -39,9 +37,14 @@ ion-card-header { position: relative }
 }
 
 .borda{
-    border-radius: 5px !important;
-    border-style: solid;
-    border-color: #2224286b;
+    
+    border-bottom-style: solid;
+    border-bottom-color: #337a246b;
     margin-top: 5px;
     margin-bottom: 5px; 
+}
+
+.ct{
+    margin: 10px;
+    text-align: center;
 }
