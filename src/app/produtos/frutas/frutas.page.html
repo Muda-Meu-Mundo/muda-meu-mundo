@@ -1,17 +1,71 @@
 <ion-header>
   <ion-toolbar color="secondary" >
-    <ion-title style="font-size: 17px;">Frutas</ion-title>
+   
+    <ion-title style="font-size: 17px;" >Frutas</ion-title>
     <ion-buttons slot="start" >
     <ion-back-button defaultHref="tab2"></ion-back-button>
   </ion-buttons>
+  
   </ion-toolbar>
+  
 </ion-header>
 
-<ion-content>
-  <ion-button *ngFor="let product of productList" color="light" (click)="_openModal()" expand="block" shape="round">
-   <ion-text>
-      {{product.productName}}
-    </ion-text>
- </ion-button>
+<ion-content >
+<ion-grid>
+  <ion-row> 
+    <ion-col>
+      <ion-item>
+       <iont-label>
+         Fruta
+       </iont-label>  
+       <ion-select placeholder="selecione" slot="end" >
+         <ion-select-option *ngFor="let product of productList">
+           {{product.productName}}
+         </ion-select-option>
+       </ion-select>
+     </ion-item>
+   </ion-col>
+ </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-item> 
+      <ion-label>Quantidade</ion-label>          
+        <ion-input type="number"></ion-input>        
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>      
+        <ion-select placeholder="unidade" >
+          <ion-select-option *ngFor="let units of unitList">
+            {{units.unitName}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item button="true" id="open-date-input">
+        <ion-label>Data</ion-label>
+        <ion-text slot="end">{{ dateValue }}</ion-text>
+        <ion-popover trigger="open-date-input" show-backdrop="false">
+          <ng-template>
+            <ion-datetime
+              #popoverDatetime
+              presentation="date"
+              (ionChange)="dateValue = formatDate(popoverDatetime.value)"
+            ></ion-datetime>
+          </ng-template>
+        </ion-popover>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+ 
+
+
  
 </ion-content>

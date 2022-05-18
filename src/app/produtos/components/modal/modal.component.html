@@ -1,7 +1,7 @@
 <ion-header >
   <ion-toolbar>
-    <ion-title *ngFor="let product of productList">
-      {{product.productName}}
+    <ion-title >
+      Selecione
     </ion-title>
     <ion-buttons slot="end">
      <ion-button (click)="_dismiss()">
@@ -10,6 +10,6 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <ion-text>{{name}} {{type}}</ion-text>
+<ion-content *ngFor="let product of productList">
+  <ion-text>{{product.productName}}</ion-text>
 </ion-content>
