@@ -14,7 +14,9 @@ ion-button[color="dark"]{
 
 }
 
-
+ion-item{
+    margin-bottom: 10px;
+}
 .border {
     border-radius: 20px !important;
     box-shadow: 2px 2px 5px 2px gray;
@@ -42,5 +44,10 @@ ion-card-header { position: relative }
 }
 
 .borda{
-    border-radius: 20px !important;
+    border-radius: 5px !important;
+    border-style: solid;
+    border-color: #2224286b;
+}
+ion-icon{
+    color:#2224286b;
 }

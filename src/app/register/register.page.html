@@ -1,76 +1,45 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Registro</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:25px">Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Informe seu nome completo</ion-card-title>
-      <ion-item>
-        <ion-input></ion-input>
-      </ion-item>
-    </ion-card-header>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Informe seu telefone com ddd</ion-card-title>
-      <ion-item>
-        <ion-input type = "number"></ion-input>
-      </ion-item>
-    </ion-card-header>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Digite seu email</ion-card-title>
-      <ion-item>
-        <ion-label position = "floating">Email</ion-label >
-        <ion-input type = "email" ></ion-input>
-      </ion-item>
-      <ion-card-title>Digite sua senha</ion-card-title>
-      <ion-item>
-        <ion-label position = "floating">Senha</ion-label >
-        <ion-input type = "password" ></ion-input>
-      </ion-item>
-      <ion-card-title>Confirme sua senha</ion-card-title>
-      <ion-item>
-        <ion-label position = "floating">Confirmar Senha</ion-label >
-        <ion-input type = "password" ></ion-input>
+  <ion-card class="border">
+    <ion-card-header>          
+      <ion-item lines="none">
+        <ion-label position = "stacked" style="font-size: 20px;">Nome completo:</ion-label >
+        <ion-input class="borda" placeholder="digite seu nome completo"></ion-input>
+      </ion-item>    
+      <ion-item lines="none">
+        <ion-label position = "stacked" style="font-size: 20px;">Email:</ion-label >
+        <ion-input  class="borda" fill="clear" placeholder="digite seu e-mail" type = "email"></ion-input>
+      </ion-item>     
+      <ion-item lines="none">
+        <ion-label position = "stacked" style="font-size: 20px;">Senha:</ion-label >
+        <ion-input class="borda" placeholder="digite sua senha" type = "password" ></ion-input>
+      </ion-item>      
+      <ion-item lines="none">
+        <ion-label position = "stacked" style="font-size: 20px;">Confirmar Senha</ion-label >
+        <ion-input class="borda" placeholder="confirme sua senha" type = "password" ></ion-input>
+      </ion-item>     
+      <ion-item lines="none">
+        <ion-label position = "stacked" style="font-size: 20px;">telefone com ddd:</ion-label >
+        <ion-input class="borda" type = "number" placeholder="digite seu telefone com ddd"></ion-input>
       </ion-item>
     </ion-card-header>
   </ion-card>
 
 
-  <ion-card>
-
+  <ion-card class="border">
     <ion-card-header>
-      <ion-card-title>Que tipo de alimentos você disponibiliza?</ion-card-title>
-      <ion-item color="#0000ffff">
-        <ion-label color="tertiary">Frutas</ion-label>
-        <ion-toggle slot="end" unchecked></ion-toggle>
-      </ion-item>
-      <ion-item color="#0000ffff">
-        <ion-label color="tertiary">Verduras</ion-label>
-        <ion-toggle slot="end" unchecked></ion-toggle>
-      </ion-item>
-      <ion-item color="#0000ffff">
-        <ion-label color="tertiary">Legumes</ion-label>
-        <ion-toggle slot="end" unchecked></ion-toggle>
-      </ion-item>
-      <ion-item color="#0000ffff">
-        <ion-label color="tertiary">Grãos</ion-label>
-        <ion-toggle slot="end" unchecked></ion-toggle>
-      </ion-item>
-      <ion-item color="#0000ffff">
-        <ion-label color="tertiary">Raízes</ion-label>
-        <ion-toggle slot="end" unchecked></ion-toggle>
-      </ion-item>
-    </ion-card-header>
-    
+      <ion-card-title style="font-size: 20px;">Que tipo de alimentos você disponibiliza?</ion-card-title>
+      <ion-item color="#0000ffff" *ngFor="let p of productList" lines="none">
+        <ion-label color="secondary">{{p.product}}</ion-label>
+        <ion-toggle slot="end" unchecked ></ion-toggle>
+      </ion-item>      
+    </ion-card-header>    
   </ion-card>
-  <ion-button size="full" color="primary" (click)="register()">Registrar</ion-button>
+  <ion-button size="full" color="secondary" (click)="register()" shape="round">Registrar</ion-button>
 </ion-content>

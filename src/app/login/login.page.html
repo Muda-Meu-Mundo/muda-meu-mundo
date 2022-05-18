@@ -6,20 +6,20 @@
     <form [formGroup]="form">
       <ion-card class="border" slot="start" >
         <ion-card-header class="pad20" >
-          <ion-card-title color="success" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:30px" class="center">Login</ion-card-title>
+          <ion-card-title color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:30px" class="center">Login</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <ion-item class="borda" >
-            <ion-label position = "floating" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">E-mail</ion-label >
+          <ion-item class="borda">
+            <ion-icon name="person" size="small" slot="start"></ion-icon>
             <ion-input type = "email" formControlName="email" placeholder="Digite seu e-mail"></ion-input>
           </ion-item >
           <ion-item class="borda" >
-            <ion-label position = "floating" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >Senha</ion-label>
+            <ion-icon name="lock-closed-outline" size="small" slot="start"></ion-icon>
             <ion-input type = "password" formControlName="senha" placeholder="Digite sua senha"></ion-input>
           </ion-item>
           <ion-button color="dark" fill="clear" size="full" [disabled]="!form.get('email').valid">Esqueceu email ou senha</ion-button>
-          <ion-button color="primary" size ="full" (click)="login()" [disabled]="!form.valid">Login</ion-button>
-          <ion-button color="primary" fill="clear" size="full" (click)="register()">Registro</ion-button>
+          <ion-button color="secondary" size ="full" (click)="login()" [disabled]="!form.valid" shape="round">LOGIN</ion-button>
+          <ion-button color="secondary" fill="clear" size="full" (click)="register()" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:13px">Registro</ion-button>
         </ion-card-content>
       </ion-card>
     </form>

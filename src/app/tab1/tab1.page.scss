@@ -28,16 +28,12 @@ ion-content {
   max-height: 120px !important;
   margin-top: 25px;
 }
-.user {
-    font-size: 17px;
-}
 
-ion-list {
-  background-color: #a1ff81;
-}
 
-ion-card-content { 
-  padding: 0px ;
+
+
+.final {
+  text-align: center;
 }
 
 .border {
@@ -45,7 +41,6 @@ ion-card-content {
     box-shadow: 2px 2px 5px  rgba(128, 128, 128, 0.863);
     margin-left: 10px;
     margin-right: 10px;
-    margin: 5px;
     vertical-align: middle;
     }
 

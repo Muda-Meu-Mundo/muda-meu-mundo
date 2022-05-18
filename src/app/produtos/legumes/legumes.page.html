@@ -8,9 +8,65 @@
 </ion-header>
 
 <ion-content>
-  <ion-button *ngFor="let product of productList" color="light" expand="block" shape="round">
-    <ion-text>
-       {{product.productName}}
-     </ion-text>
-  </ion-button>
+  <ion-grid>
+    <ion-row> 
+      <ion-col>
+        <ion-item class="borda">
+         <iont-label>
+           Legumes
+         </iont-label>  
+         <ion-select placeholder="selecione" slot="end"  >
+           <ion-select-option *ngFor="let product of productList">
+             {{product.productName}}
+           </ion-select-option>
+         </ion-select>
+       </ion-item>
+     </ion-col>
+   </ion-row>
+  
+  
+    <ion-row>
+      <ion-col>
+        <ion-item class="borda"> 
+        <ion-label>Quantidade</ion-label>          
+          <ion-input type="number" pattern="\d*" step="10"></ion-input>        
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="borda">      
+          <ion-select placeholder="unidade" >
+            <ion-select-option *ngFor="let units of unitList">
+              {{units.unitName}}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col>
+        <ion-item button="true" id="open-date-input" class="borda">
+          <ion-label>Data</ion-label>
+          <ion-text slot="end">{{ dateValue }}</ion-text>
+          <ion-popover trigger="open-date-input" show-backdrop="false">
+            <ng-template>
+              <ion-datetime
+                #popoverDatetime
+                presentation="date"
+                (ionChange)="dateValue = formatDate(popoverDatetime.value)"
+              ></ion-datetime>
+            </ng-template>
+          </ion-popover>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button size="full" color="secondary" shape="round">
+          <ion-label>CONFIRMAR</ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

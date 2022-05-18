@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LegumesPage } from '../produtos/legumes/legumes.page';
 
 
 @Component({
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  productList = [
+    {"product" :"Frutas"},
+    {"product" :"Grãos"},
+    {"product" :"Legumes"}, 
+    {"product" :"Raízes"},
+    {"product" :"Verduras" }
+  ]
 
   constructor() {}
   

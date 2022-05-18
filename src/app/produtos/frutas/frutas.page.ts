@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ModalController } from '@ionic/angular';
 import { IonDatetime } from '@ionic/angular';
 import { format, parseISO, getDate, getMonth, getYear } from 'date-fns';
 @Component({
