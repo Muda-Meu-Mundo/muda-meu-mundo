@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="secondary">
-    <ion-title class="final" color="light" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 24px">
+    <ion-title class="toolbarc" color="light" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 24px">
       Escolha o tipo de alimento
     </ion-title>
   </ion-toolbar>
@@ -9,20 +9,53 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
   </ion-header>
-  <ion-item class="border" lines="none" detail routerLink="/frutas">
-    <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Frutas</ion-label>
-  </ion-item>
-  <ion-item class="border" lines="none" detail routerLink="/verduras">
-   <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Verduras</ion-label>
-  </ion-item>
-  <ion-item class="border" lines="none" detail routerLink="/legumes">
-   <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Legumes</ion-label>
-  </ion-item>
-  <ion-item class="border" lines="none" detail routerLink="/graos">
-   <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Grãos</ion-label>
-  </ion-item>
-  <ion-item class="border" lines="none" detail routerLink="/raizes">
-   <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Raízes</ion-label>
-  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item class="border" padding="0px" lines="none" routerLink="/frutas">
+          <img src="assets/apple.png">
+          <a href="https://www.flaticon.com/free-icons/apple" title="apple icons"></a>
+          <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Frutas</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="border" lines="none" routerLink="/verduras">
+          <img src="assets/salad.png">
+          <a href="https://www.flaticon.com/free-icons/salad" title="salad icons"></a>
+          <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Verduras</ion-label>                 
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+     <ion-col>
+      <ion-item class="border" lines="none"  routerLink="/legumes">
+        <img src="assets/pumpkin.png">
+        <a href="https://www.flaticon.com/free-icons/pumpkin" title="pumpkin icons"></a>
+        <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Legumes</ion-label>
+       </ion-item>
+     </ion-col>
+     <ion-col>
+      <ion-item class="border" lines="none"  routerLink="/graos">
+        <img src="assets/salad (1).png">
+        <a href="https://www.flaticon.com/free-icons/bean" title="bean icons"></a>
+       <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Grãos</ion-label>
+      </ion-item>
+     </ion-col>    
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item class="border" lines="none"  routerLink="/raizes">
+          <img src="assets/potato.png">
+          <a href="https://www.flaticon.com/free-icons/potato" title="potato icons"></a>
+          <ion-label color="secondary" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 18px">Raízes</ion-label>
+       </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
+
+
+
+
+
