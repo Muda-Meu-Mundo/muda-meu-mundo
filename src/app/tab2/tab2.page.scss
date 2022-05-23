@@ -14,28 +14,20 @@ ion-content {
 }
     
  .toolbarc{
-    text-align: center;
+    text-align: center;    
  }
 
- ion-item::part(native) {        
-    height: 145px;
-    flex-grow: 0; 
-    display: flex;
+.wrapper{
+      display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    padding-inline-start:0;
-    padding-top: 15px !important;    
 }
 
 ion-label {    
     text-align: center;
-    margin-top: 15px;
+    margin-top: 15px;    
 }
 
-ion-item {     
-    --inner-padding-end:0; 
- }
 
 ion-col {
   display: grid;

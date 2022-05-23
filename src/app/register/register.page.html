@@ -7,7 +7,18 @@
 <ion-content>
   <ion-card class="border">
     <ion-title class="ct" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:25px" color="secondary">Crie sua conta</ion-title>
-    <ion-card-header>          
+    <ion-card-header>     
+      <ion-item lines="none" color="#0000ffff" >
+        <div class="wrapper">
+          <ion-label color="light" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Foto de perfil</ion-label >
+          <ion-avatar>
+            <img src="assets/foti.jpg">
+            <ion-button color="light" class="camera">
+              <ion-icon slot="icon-only" name="camera-outline" color="medium"></ion-icon>
+            </ion-button>
+          </ion-avatar>   
+        </div>
+      </ion-item>        
       <ion-item lines="none" color="#0000ffff">
         <ion-label color="light" position = "stacked" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Nome completo:</ion-label >
         <ion-input class="borda" placeholder="digite seu nome completo"></ion-input>
