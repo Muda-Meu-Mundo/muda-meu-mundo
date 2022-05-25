@@ -9,43 +9,46 @@ ion-content {
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-size: 22px;
-
+    font-size:6vw !important;
   }
   
 
 .cabeça {
   border-radius: 0 0 25% 25%;
-  box-shadow: 2px 2px 7px  rgba(56, 134, 30, 0.798);
-  margin-top: -10px;
-  margin-right: -5px;
-  margin-left: -5px;
+  box-shadow: 0.2rem 0.2rem 0.5rem  rgba(56, 134, 30, 0.798);
+  margin-top: -4%; 
   background-color: #018c38;
    } 
 
  .avatar {
-  width:100% !important;  
-  height : 100% !important;  
-  max-width: 120px !important;  
-  max-height: 120px !important;
-  margin-top: 25px;
+
+  margin-top: 8%;
+  height: 34%; 
+  width: 34%; 
+  object-fit: contain;
 }
 
 .verde {
-  --background: 23ad5a;
+  --background: #018c38;
+  align-items: center;
 }
 
 
-.final {
+.centert {
   text-align: center;
+}
+
+.toolbarc {
+  text-align: center;
+  font-size: 6.7vw !important;
 
 }
 
 .border {
-    border-radius: 20px !important;
-    box-shadow: 2px 2px 5px  rgba(56, 134, 30, 0.796);
-    margin-left: 10px;
-    margin-right: 10px;
+    border-radius: 1.5rem !important;
+    box-shadow: 0.1rem 0.1rem 0.6rem  rgba(56, 134, 30, 0.796);
+    margin-left: 3%;
+    margin-right: 3%;
     vertical-align: middle;
     --background: #018c38;
     background-color: #018c38;
@@ -56,7 +59,19 @@ ion-content {
 }    
 
 .mgrid{
-  margin-top: 20px;
+  margin-top: 2%;
+  height: 100%;
 }
-    
+
+ion-row{
+height: max-content;
+}
+
+ion-col{
+  height: 100%;
+}
+ion-label {
+  font-size:5vw !important;
+
+}
     
