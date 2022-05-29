@@ -5,12 +5,13 @@ ion-content {
   
 .border {    
     border-radius: 20% !important;
-    box-shadow: 2px 2px 5px  rgba(56, 134, 30, 0.798); 
+    box-shadow: 0.2rem 0.2rem 0.5rem  rgba(56, 134, 30, 0.798); 
 
 }
     
  .toolbarc{
     text-align: center;
+    font-size: 6.7vw !important;
     
  }
 
@@ -51,7 +52,7 @@ ion-row{
 ion-col {
   display: grid;
   justify-content: center;
-  gap: 2px;
+  gap: 2%;
   align-content: center;
   grid-auto-flow: column;
   height: 100%;
