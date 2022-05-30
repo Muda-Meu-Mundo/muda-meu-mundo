@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LegumesPage } from '../produtos/legumes/legumes.page';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class Tab1Page {
     {"product" :"Verduras" }
   ]
 
-  constructor() {}
+  constructor(private router: Router) {}
   
   botaoclick(){
     alert('squeça tud')
@@ -38,9 +39,10 @@ export class Tab1Page {
   site(){
     window.open('https://www.mudameumundo.com.br/', '_system');
   }
-
-
-
-
-
+  editar(){
+    this.router.navigate(['editar']);
+  }
 }
+
+
+

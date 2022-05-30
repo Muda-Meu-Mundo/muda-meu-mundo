@@ -4,7 +4,6 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Router } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { Tab2Page } from './tab2.page';
 
 describe('Tab2Page', () => {
