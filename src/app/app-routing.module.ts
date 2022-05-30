@@ -42,7 +42,11 @@ const routes: Routes = [
   {
     path: 'raizes',
     loadChildren: () => import('./produtos/raizes/raizes.module').then( m => m.RaizesPageModule)
+  },  {
+    path: 'editar',
+    loadChildren: () => import('./editar/editar.module').then( m => m.EditarPageModule)
   },
+
 
 
 
