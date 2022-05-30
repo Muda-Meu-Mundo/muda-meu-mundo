@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LegumesPage } from '../produtos/legumes/legumes.page';
 import { Router } from '@angular/router';
 
 

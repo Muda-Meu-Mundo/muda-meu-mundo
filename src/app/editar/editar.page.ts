@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarPage implements OnInit {
 
+  productList = [
+    {"product" :"Frutas"},
+    {"product" :"Grãos"},
+    {"product" :"Legumes"}, 
+    {"product" :"Raízes"},
+    {"product" :"Verduras" }
+  ]
+
   constructor() { }
 
   ngOnInit() {

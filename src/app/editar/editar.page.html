@@ -1,12 +1,56 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>editar</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title class="ct" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 22px">editar perfil</ion-title>
     <ion-buttons slot="start" >
-      <ion-back-button defaultHref="tab1"></ion-back-button>
+      <ion-button  (click)="tab1()">Cancelar</ion-button>
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button  (click)="tab1()">Salvar</ion-button>
+    </ion-buttons>    
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card class="border">
+    <ion-card-header>     
+      <ion-item lines="none" color="#0000ffff" >
+        <div class="wrapper">
+          <ion-avatar>
+            <img src="assets/foti.jpg">
+            <ion-button color="light" class="camera">
+              <ion-icon slot="icon-only" name="camera-outline" color="medium"></ion-icon>
+            </ion-button>
+          </ion-avatar>   
+        </div>
+      </ion-item>        
+   
+      <ion-item lines="none" color="#0000ffff">
+        <ion-label color="light" position = "stacked" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Email:</ion-label >
+        <ion-input  class="borda" fill="clear" color="light" placeholder="digite seu e-mail" type = "email" value=" maluzi@gmail.com"></ion-input>
+      </ion-item>     
+      <ion-item lines="none" color="#0000ffff">
+        <ion-label color="light" position = "stacked" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Senha:</ion-label >
+        <ion-input class="borda" color="light" placeholder="digite sua nova senha" type = "password" ></ion-input>
+      </ion-item>      
+      <ion-item lines="none" color="#0000ffff">
+        <ion-label color="light" position = "stacked" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Confirmar Senha</ion-label >
+        <ion-input class="borda" color="light" placeholder="confirme sua nova senha" type = "password" ></ion-input>
+      </ion-item> 
+      <ion-item lines="none" color="#0000ffff">
+        <ion-label color="light" position = "stacked" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Endereço:</ion-label >
+        <ion-input class="borda" color="light" placeholder="digite seu endereço" value="Rua da Hora,302"></ion-input>
+      </ion-item> 
+      <ion-item lines="none" color="#0000ffff">
+        <ion-label color="light" position = "stacked" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px">Telefone com ddd:</ion-label >
+        <ion-input class="borda" color="light" type = "number" placeholder="digite seu telefone com ddd" value="9856329545"></ion-input>
+      </ion-item>   
+      <ion-card-title color="light" class="ct" style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:18px" >Que tipo de alimentos você disponibiliza?</ion-card-title>
+      <ion-item color="#0000ffff" *ngFor="let p of productList" lines="none">
+        <ion-label color="light">{{p.product}}</ion-label>
+        <ion-toggle slot="end" checked ></ion-toggle>
+      </ion-item>      
+    </ion-card-header>    
+  </ion-card>
+  
 
 </ion-content>
