@@ -1,7 +1,13 @@
 ion-content {
     --background: url('../../assets/cenoura.jpg/') no-repeat center center / cover !important;
 }
-.user {
-      font-size: 24px;
-  }
-  
+.toolbarc{
+    text-align: center;
+    font-size: min(6.7vw,50px) !important;
+    padding-inline: 0%;
+ }
+
+ ion-toolbar{
+    padding:1%;
+    --min-height: 41px !important;
+    }

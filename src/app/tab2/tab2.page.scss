@@ -7,9 +7,7 @@ ion-content {
     box-shadow: 0.2rem 0.2rem 0.5rem  rgba(56, 134, 30, 0.798); 
 
 }
-ion-toolbar{
-    object-fit: contain;
-}    
+  
  .toolbarc{
     text-align: center;
     font-size: min(6.7vw,50px) !important;
@@ -68,7 +66,7 @@ img {
    }
 
    ion-toolbar{
-    padding:2%;
+    padding:1%;
     --min-height: 41px !important;
     }
         
