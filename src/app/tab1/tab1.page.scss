@@ -40,8 +40,7 @@ ion-content {
 
 .toolbarc {
   text-align: center;
-  font-size: 6.7vw !important;
-
+  font-size: min(6.7vw,50px) !important;
 }
 
 .border {
@@ -68,10 +67,17 @@ height: max-content;
 }
 
 ion-col{
-  height: 100%;
+  height: max-content;
 }
 ion-label {
   font-size:5vw !important;
-
 }
-    
+ion-toolbar{
+padding:2%;
+--min-height: 41px !important;
+}
+
+.vertical{
+  bottom:65px;
+}
+

@@ -1,6 +1,5 @@
 ion-content {
     --background: url('../../assets/cenoura.jpg/') no-repeat center center / cover !important; 
-    display: grid;
 }
   
 .border {    
@@ -8,11 +7,13 @@ ion-content {
     box-shadow: 0.2rem 0.2rem 0.5rem  rgba(56, 134, 30, 0.798); 
 
 }
-    
+ion-toolbar{
+    object-fit: contain;
+}    
  .toolbarc{
     text-align: center;
-    font-size: 6.7vw !important;
-    
+    font-size: min(6.7vw,50px) !important;
+    padding-inline: 0%;
  }
 
  ion-item::part(native) {        
@@ -23,22 +24,23 @@ ion-content {
     align-items: center;
     justify-content: flex-end;
     padding-inline-start:0;
-    padding-top: 10% !important;    
+    padding-top: 5% !important;    
 }
 
-ion-label {    
+ion-label {   
+    margin-top: 2vmax; 
     text-align: center;
-    margin-top: 10.5%;
-    font-size:5vw !important;
+    font-size:2.5vh !important;
     height: 100%;
     width: 100%;
-
+    margin-top: 5%;
 }
+
 
 ion-item {     
     --inner-padding-end:0; 
-    height: 20vh;
-    width: 41vw;
+    height: 70%;
+    width: 41vmin;
  }
 
 ion-grid{
@@ -50,12 +52,13 @@ ion-row{
 
 
 ion-col {
-  display: grid;
-  justify-content: center;
-  gap: 2%;
-  align-content: center;
+    display: grid;
+ justify-content: center;
+ align-items: center;
+ gap: 2%;
   grid-auto-flow: column;
   height: 100%;
+  object-fit: contain;
 }
 
 img {
@@ -63,3 +66,9 @@ img {
     width: 56%; 
     object-fit: contain;
    }
+
+   ion-toolbar{
+    padding:2%;
+    --min-height: 41px !important;
+    }
+        
