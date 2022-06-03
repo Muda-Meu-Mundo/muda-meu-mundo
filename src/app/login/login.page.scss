@@ -4,50 +4,56 @@ ion-content {
         display: block;
   margin-left: auto;
   margin-right: auto;
-  
     }
    
 }
 
 ion-button[color="dark"]{
     text-transform: initial;
+}
 
+ion-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    padding-inline-start: 2.5%;
+    padding-inline-end: 2.5%;
+    width: min(100%, 540px) !important;
 }
 
 ion-item{
-    margin-bottom: 10px;
-}
-.border {
-    border-radius: 1.5rem !important;
-    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem gray;
-    margin-left: 10px;
-  margin-right: 10px;
-  margin: 10px;
-    }
-
-ion-card-header { position: relative }
-.center-right{
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    margin-top: 5px;
-    }
-
-.pad20{
-    padding: 25px;
-
-}
-
-.center{
-    text-align: center;
-}
-
-.borda{
+    margin: 2.5%;
     border-radius: 5px !important;
     border-style: solid;
     border-color: #2224286b;
+    font-size:min(4vw,18px);
+
 }
-ion-icon{
-    color:#2224286b;
+ion-icon{color:#2224286b;}
+
+ion-col {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 1.5rem !important;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem gray;
+    height: 100%; 
+    }
+
+
+.titulo {
+    padding: 6%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size:min(8.5vw,40px);
 }
+ion-label {
+    font-size:min(4vw,18px) ;
+}
+
+
+
+
+
