@@ -17,11 +17,8 @@ export class Tab1Page {
     {"product" :"Verduras" }
   ]
 
-  constructor(private router: Router) {}
-  
-  botaoclick(){
-    alert('squeça tud')
-  }
+  constructor(private router: Router) {} 
+
 
   facebook(){
     window.open('https://pt-br.facebook.com/mudameumundo/', '_system');

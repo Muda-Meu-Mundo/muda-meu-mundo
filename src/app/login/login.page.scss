@@ -5,7 +5,6 @@ ion-content {
   margin-left: auto;
   margin-right: auto;
     }
-   
 }
 
 ion-button[color="dark"]{
@@ -29,8 +28,8 @@ ion-item{
     border-style: solid;
     border-color: #2224286b;
     font-size:min(4vw,18px);
-
 }
+
 ion-icon{color:#2224286b;}
 
 ion-col {
@@ -42,6 +41,9 @@ ion-col {
     height: 100%; 
     }
 
+ion-label {
+    font-size:min(4vw,18px) ;
+}
 
 .titulo {
     padding: 6%;
@@ -49,11 +51,6 @@ ion-col {
     text-align: center;
     font-size:min(8.5vw,40px);
 }
-ion-label {
-    font-size:min(4vw,18px) ;
-}
-
-
 
 
 

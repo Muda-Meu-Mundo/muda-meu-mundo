@@ -2,51 +2,54 @@ ion-content {
     --background: #018c38;
 }
 
-
-
-
-
-.border {
-   --background: #018c38;
+ion-card {
+    --background: #018c38;
+    border-radius: 1.5rem !important;
+    margin: 3%;
     }
 
 ion-card-header { padding: 3%;}
-ion-button{
-font-size: small;}
-.center-right{
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    margin-top: 3%;
-    }
 
-.pad20{
-    padding: 25px;
+
+ion-label{
+    font-size: min(6.7vw,40px) !important;
+} 
+
+ion-card-title{
+    font-size:min(5.5vw,40px);
+    text-align: center;
+    margin: 3%;
+
 }
 
-.center{
-    left: 700px;
-}
-
-.borda{
-    
+ion-input{
+    font-size: min(4.5vw, 25px) !important;
     border-bottom-style: solid;
     border-bottom-color: #337a246b;
-    margin-top: 5px;
-    margin-bottom: 5px; 
+    margin-top: 3%;
+    margin-bottom: 3%; 
 }
 
-.ct{
-    text-align: center;
+ion-toolbar{
+    --min-height: 41px !important;
+    }
+
+
+.lista{
+    font-size:min(5.5vw,28px) !important;  
+    padding-left: 0%;
+    text-align:start;
 }
+
+.toolbarc {
+    text-align: center;
+    font-size: min(6.7vw,50px) !important;
+  }
 
 ion-avatar {
-    width:100% !important;  
-    height : 100% !important;  
-    max-width: 120px !important;  
-    max-height: 120px !important;
-    margin-top: 15px;    
+    width:min(40vw,180px) !important;  
+    height : min(40vw,180px) !important;  
+    margin-top: 1.5%;   
   }
 
 .wrapper{
@@ -57,19 +60,24 @@ ion-avatar {
     width: 100%;
 }
 
-    .camera {
-        --border-width: 1px;
-        --border-color: var(--ion-color-light-shade);
-        --border-style: solid;
-        --padding-start: 0;
-        --padding-end: 0;
-        --padding-bottom: 0;
-        --padding-top: 0;  
-        --border-radius: 50%;
-        height: 30px;
-        width: 30px;
-        position: absolute;        
-        bottom: -2%;
-        right: 35%;       
+.camera {
+    --border-width: 1px;
+    --border-color: var(--ion-color-light-shade);
+    --border-style: solid;
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-bottom: 0;
+    --padding-top: 0;  
+    --border-radius: 50%;
+    height: min(8vw,40px);
+    width: min(8vw,40px);
+    position:absolute;
+    left:47vw;
+    bottom:0vh;              
     }
+
+.botoes{
+    font-size: min(2.5vw, 20px) !important;
+}
+    
 
