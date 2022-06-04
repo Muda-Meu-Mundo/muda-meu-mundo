@@ -31,3 +31,27 @@
     align-items: center;
     height: 100%;
 }
+
+.alert-wrapper{
+    --min-height: min(50vh,380px) !important;
+    border-radius: 6% !important;
+}
+
+.sc-ion-alert-md-h{ --min-width: min(70vw,400px); }
+
+.alert-title.sc-ion-alert-md{ font-size:min(6vw,26px) ; }
+
+.alert-radio-label.sc-ion-alert-md{ font-size: min(5vw, 22px) !important; }
+
+.alert-button.sc-ion-alert-md{ font-size: min(4vw, 20px); }
+
+.alert-title.sc-ion-alert-ios{ font-size:min(6vw,26px) ; }
+
+.sc-ion-alert-ios-h{ font-size: min(5vw, 22px) !important;}
+
+.alert-button.sc-ion-alert-ios{ font-size: min(4vw, 20px); }
+
+.alert-wrapper.sc-ion-alert-ios{
+    --min-width: min(70vw,400px);
+    --min-height: min(50vh,350px) !important;
+}

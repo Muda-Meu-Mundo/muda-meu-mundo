@@ -1,13 +1,21 @@
 ion-content {
     --background: url('../../../assets/cenoura.jpg/') no-repeat center center / cover !important;
 }
-.center {
-    text-align: center;
-    }
+
+.center {text-align: center;}
  
-    .borda {
-        border-radius: 20px !important;
-    }
+.borda {border-radius: 20px !important;}
+
+ion-title{ font-size: min(7.1vw, 35px);}
+
+.labels{font-size:min(5vw,24px) !important;}
+
+ion-select{font-size:min(4.5vw, 20px) !important;}
+
+.confirm{
+    height: min(5vmax, 45px) !important;
+    font-size: min(4.5vw, 18px);
+}
 
 
-    
+

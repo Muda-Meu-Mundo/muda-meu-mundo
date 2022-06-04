@@ -44,6 +44,7 @@ ion-toolbar{
 .toolbarc {
     text-align: center;
     font-size: min(6.7vw,50px) !important;
+    padding-inline: 0%;
   }
 
 ion-avatar {
@@ -78,6 +79,15 @@ ion-avatar {
 
 .botoes{
     font-size: min(2.5vw, 20px) !important;
+    padding-inline: 0%;
+
 }
     
+
+.sc-ion-buttons-ios-s ion-button{
+    min-width: min(20vw,200px);
+    min-height: min(5vh,50px);
+    font-size: min(2.5vw, 20px) !important;
+
+}
 
