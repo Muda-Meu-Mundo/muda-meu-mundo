@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-editar',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editar.page.scss'],
 })
 export class EditarPage implements OnInit {
+
+  
 
   productList = [
     {"product" :"Frutas"},
@@ -15,9 +19,18 @@ export class EditarPage implements OnInit {
     {"product" :"Verduras" }
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+  salvar(){
+    this.router.navigate(['tabs']);
+  }
+
+  voltar(){
+    this.router.navigate(['tabs']);
+  }
+
 
 }

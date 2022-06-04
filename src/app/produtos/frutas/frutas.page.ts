@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonDatetime } from '@ionic/angular';
 import { format, parseISO, getDate, getMonth, getYear } from 'date-fns';
+
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-frutas',
   templateUrl: './frutas.page.html',
@@ -33,7 +35,7 @@ unitList = [
 dateValue = '';
 dateValue2 = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   
 
@@ -52,7 +54,10 @@ dateValue2 = '';
 
   ngOnInit() {
   }
- 
+
+  confirm(){
+    this.router.navigate(['tabs/tab2']);
+  }
 
 
 }

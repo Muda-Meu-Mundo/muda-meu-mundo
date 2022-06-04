@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonDatetime } from '@ionic/angular';
 import { format, parseISO, getDate, getMonth, getYear } from 'date-fns';
 
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-verduras',
   templateUrl: './verduras.page.html',
@@ -30,7 +31,7 @@ export class VerdurasPage implements OnInit {
     dateValue = '';
     dateValue2 = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   formatDate(value: string) {
     return format(parseISO(value), 'MMM dd yyyy');
@@ -46,6 +47,9 @@ export class VerdurasPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+  confirm(){
+    this.router.navigate(['tabs/tab2']);
   }
 
 }
