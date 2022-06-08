@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { HttpClient,HttpHeaders} from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -9,12 +9,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-  
+   httpOptions ={
+    headers: new HttpHeaders({'Content Type':'application/json'})
+   }
 
   public signup: FormGroup;
   public submitAttempt: boolean = false;  
+  
 
-  constructor(private router: Router,public formBuilder: FormBuilder) {
+  constructor(private router: Router,public formBuilder: FormBuilder,private httpClient: HttpClient) {
     this.signup = formBuilder.group({
       Photo:[],
       Name: ['',Validators.compose([Validators.pattern('[a-zA-Z ]*'), Validators.required])],
@@ -43,6 +46,11 @@ export class RegisterPage implements OnInit {
         else {
             console.log("success!")
             console.log(this.signup.value);
+              const userInfo =   {
+                'username': this.signup.value["Name"]};
+              
+              this.httpClient.post('http://localhost:4000/teste3',userInfo)
+
               this.router.navigate(['login'])
          }
         }

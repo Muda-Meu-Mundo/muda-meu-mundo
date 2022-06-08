@@ -1,3 +1,4 @@
+<!--pagina de registro-->
 <ion-content>
   <p *ngIf="submitAttempt" style="color: #ea6153;">
     Por favor, preencha todos os detalhes de acordo.
@@ -19,7 +20,7 @@
         </div>  
         <ion-button color="light" class="camera">
           <ion-icon slot="icon-only" name="camera-outline" color="medium"></ion-icon>
-          <input type="file" name="Photo" />
+          <input name="Photo" />
         </ion-button>                  
       </ion-item>              
       <ion-item lines="none" color="#0000ffff">
@@ -68,3 +69,5 @@
   </ion-card>
   <ion-button size="full" class="register" color="secondary" (click)="register()" shape="round">Registrar</ion-button>
 </ion-content>
+
+
